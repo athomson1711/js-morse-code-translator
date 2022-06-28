@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Morse Code Translator</title>
+</head>
+<body>
+    <div class="translator-container">
+        <div class="header-instructions-container"> 
+            <h1>English Morse Code Translator</h1>
+            <div class="instructions"><p>Type your english or morse code sentence into the input box below:</p>
+                <p> To translate from Morse, separate letters with a space and words with "/".</p>
+                <p>just like this: " .--- ..- ... -/.-.. .. -.- ./- .... .. ..." </p>
+            </div>
+        </div>
+
+        <!-- <div class="morse-input-buttons">
+            <button class="dot-button">dot</button>
+            <button class="dash-button">dash</button>
+            <button class="space-button">space</button>
+            <button class="new-word-button">new word</button>
+        </div> -->
+   
+    <div class="input-output-container">
+        <input class="input-text">
+        <button class="english-button">Translate to English</button>
+        <button class="morse-button">Translate to Morse</button>
+        <div class="out-text-box">
+            <p class="output-text"></p>
+        </div>
+    </div>
+    <script src="scripts/index.js" type="module"></script>
+</body>
+</html>
