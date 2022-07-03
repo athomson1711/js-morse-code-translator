@@ -12,6 +12,7 @@ const morseDotButton = document.querySelector(".dot-button")
 const morseDashButton = document.querySelector(".dash-button")
 const morseSpaceButton = document.querySelector(".space-button")
 const morseNewWordButton = document.querySelector(".new-word-button")
+const morseClearButton = document.querySelector(".clear-button")
 
 // create morse objects to be used
 const englishToMorseTranslator = new Translator ("", " ", englishAlphabet, morseAlphabet, " ", "/")
@@ -30,3 +31,4 @@ morseDotButton.addEventListener("click", () => inputTextBox.value += ".")
 morseDashButton.addEventListener("click", () => inputTextBox.value += "-")
 morseSpaceButton.addEventListener("click", () => inputTextBox.value += " ")
 morseNewWordButton.addEventListener("click", () => inputTextBox.value += "/")
+morseClearButton.addEventListener("click", () => inputTextBox.value = "")
