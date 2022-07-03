@@ -40,6 +40,7 @@
   .input-output-container{  
     display: grid;
     grid-template-columns: 40% 20% 40%;
+    grid-template-rows: auto auto;
     height: 50%;
     width: 100%;
   } 
@@ -70,4 +71,7 @@
     grid-row: 1 / 2;
   }
 
-
+  img{
+    /* margin: 15px; */
+    width: 60%;
+    grid-column: 1 / span 3;  }
