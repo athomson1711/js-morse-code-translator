@@ -8,11 +8,10 @@ export class Translator {
         this.seperateWord = seperateWord;
         this.joinWord = joinWord;
     }
-
             // seperate the word into characters 
             // with each character locate it in object and return the value.
             // push that value to the output
-            // add a "joining" space
+            // add a "join"
     
     translate(inputTextBox) {
         let output = "";
