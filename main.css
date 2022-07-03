@@ -71,6 +71,10 @@
     grid-row: 1 / 2;
   }
 
+  .morse-input-buttons{
+    margin-top: 15px;
+  }
+
   img{
     /* margin: 15px; */
     width: 60%;
