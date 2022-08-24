@@ -1,7 +1,7 @@
-import {Translator} from "./translator.js";
+import { Translator } from "./translator.js";
 
-const englishAlphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","1","2","3","4","5","6","7","8","9","0",".",",","?"];
-const morseAlphabet = [".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--..",".----","..---","...--","....--",".....","-....","--...","---..","----.","-----",".-.-.-","--..--","..--.."];
+const englishAlphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", ".", ",", "?"];
+const morseAlphabet = [".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--..", ".----", "..---", "...--", "....--", ".....", "-....", "--...", "---..", "----.", "-----", ".-.-.-", "--..--", "..--.."];
 
 // DOM ELEMENT SELECTORS 
 const inputTextBox = document.querySelector(".input-text")
@@ -15,16 +15,16 @@ const morseNewWordButton = document.querySelector(".new-word-button")
 const morseClearButton = document.querySelector(".clear-button")
 
 // create morse objects to be used
-const englishToMorseTranslator = new Translator ("", " ", englishAlphabet, morseAlphabet, " ", "/")
-const morseToEnglishTranslator = new Translator (" ", "", morseAlphabet, englishAlphabet, "/", " ")
+const englishToMorseTranslator = new Translator("", " ", englishAlphabet, morseAlphabet, " ", "/")
+const morseToEnglishTranslator = new Translator(" ", "", morseAlphabet, englishAlphabet, "/", " ")
 
 // translate functions
 const translateToMorse = () => outputText.innerHTML = englishToMorseTranslator.translate(inputTextBox.value)
-const translateToEnglish =  () => outputText.innerHTML = morseToEnglishTranslator.translate(inputTextBox.value)
+const translateToEnglish = () => outputText.innerHTML = morseToEnglishTranslator.translate(inputTextBox.value)
 
 // event listeners => trigger relevant functions then trigger translate function within object
 translateToMorseButton.addEventListener("click", (translateToMorse))
-translateToEnglishButton.addEventListener("click", (translateToEnglish)) 
+translateToEnglishButton.addEventListener("click", (translateToEnglish))
 
 // Morse buttons event listners
 morseDotButton.addEventListener("click", () => inputTextBox.value += ".")

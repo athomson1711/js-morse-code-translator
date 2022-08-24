@@ -51,3 +51,9 @@ it("should translate a sentence from mnorse => english", () => {
     const translateSentenceToMorse = morseToEnglishTranslator.translate("--. .. -./.- -. -../- --- -. .. -.-.")
     expect (translateSentenceToMorse).toBe("gin and tonic")
 })
+
+// it ("Should translate null to be ...?")
+
+// it ("Should translate 1234 to be ....?")
+
+// it ("Should translate empty string to be empty string")
